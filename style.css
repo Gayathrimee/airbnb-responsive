@@ -821,6 +821,7 @@ nav {
 .conclusion{
     background: #f7f7f7;
     overflow: hidden;
+    border-bottom: 1px solid #dddddd;
 }
 .conc-padding{
     margin-inline: auto;
@@ -858,7 +859,7 @@ nav {
     overflow: scroll;
     width: 100%;
     scrollbar-width: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #dddddd;
     position: relative;
 }
 /* .in-pop:first-child{
@@ -900,9 +901,114 @@ nav {
     border-right: none;
     border-top: none;
 }
-
-
-
+.arw{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: 1px solid ;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.pd{
+    padding-top: 32px;
+}
+.pd ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    column-gap: 8px;
+    row-gap: 24px;
+    position: relative;
+}
+.pd a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    font-family: medium;
+}
+.pd a p{
+    color: #6a6a6a;
+    font-family: regular;
+}
+.show-but{
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background: transparent;
+    border: none;
+    gap: 4px;
+    font-family: medium;
+}
+.pd-2{
+    padding-top: 32px;
+}
+.pd-2 ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    column-gap: 8px;
+    row-gap: 24px;
+    position: relative;
+}
+.pd-2 a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    font-family: medium;
+}
+.pd-2 a p{
+    color: #6a6a6a;
+    font-family: regular;
+}
+.pd-2{
+    display: none;
+}
+.pd-3{
+    padding-top: 32px;
+}
+.pd-3 ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    column-gap: 8px;
+    row-gap: 24px;
+    position: relative;
+}
+.pd-3 a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    font-family: medium;
+}
+.pd-3 a p{
+    color: #6a6a6a;
+    font-family: regular;
+}
+.pd-3{
+    display: none;
+}
 
 
 
@@ -961,14 +1067,20 @@ nav {
         gap: 8px;
     }
 
-    .right-arrow {
-        display: block;
-    }
+.right-arrow {
+    display: block;
+}
 .main-padding{
     padding-inline-end: 40px;
     padding-inline-start: 40px;
     margin-top: unset;
- }   
+ }
+ .pd{
+    display: none;
+ }
+.pd-2{
+    display: block;
+}
 }
 
 
@@ -983,34 +1095,54 @@ nav {
 }
 
 
+@media screen and (min-width:808px){
+.arw{
+    display: none;
+}    
+}
+
 
 @media screen and (min-width:950px) {
-    .center {
-        margin-top: -80px;
-    }
-
-    .two {
-        height: 168px;
-    }
+.center {
+    margin-top: -80px;
+}
+.two {
+    height: 168px;
+}
 .main-top{
     grid-template-columns: repeat(3,1fr);
-}   
+}  
+.pd-2 ul{
+    grid-template-columns: repeat(3,1fr);
+} 
 }
 
 
 
 @media screen and (min-width:1128px) {
-    .pic-2 {
-        display: none;
-    }
-
-    .pic-1 {
-        display: block;
-    }
+.pic-2 {
+    display: none;
+}
+.pic-1 {
+    display: block;
+}
 .main-top{
     grid-template-columns: repeat(4,1fr);
-}    
+} 
+.pd-3{
+    display: block;
+} 
+.pd-3 ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
 }
+.pd-2{
+    display: none;
+}  
+}
+
+
+
 
 @media screen and (min-width:1440px) {
 .low {
@@ -1041,6 +1173,19 @@ nav {
     right: 70px;
     top: 35px;
 }
+.conc-padding{
+    padding-inline: 80px;
+}
+.up-c{
+    /* gap: 1rem; */
+    margin-left: -2px;
+}
+.stay{
+    padding-right: 10px;
+}
+.exp{
+    margin-left: -1px;
+}
 }
 
 @media screen and (min-width:1640px) {
@@ -1051,5 +1196,10 @@ nav {
     padding-inline-end: 80px;
     padding-inline-start: 80px;
     margin-top: 13px;
-}   
+    margin-bottom: 48px;
+} 
+.conc-padding h2{
+    margin-bottom:8px;
+    /* height:51px; */
+}  
 }
