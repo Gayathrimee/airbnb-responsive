@@ -752,12 +752,17 @@ nav {
     position: absolute;
     z-index: 2;
     top: 11px;
-    /* bottom: 0; */
-    right: 11px;
+    right: 12px;
     border-radius: 50%;
     width: 32px;
     height: 32px;
     color: #222222;
+}
+.up-arw svg{
+    display: block;
+    fill: none;
+    height: 10px;
+    width: 10px;   
 }
 .pictr{
     width: 100%;
@@ -821,7 +826,7 @@ nav {
 .conclusion{
     background: #f7f7f7;
     overflow: hidden;
-    border-bottom: 1px solid #dddddd;
+    /* border-bottom: 1px solid #dddddd; */
 }
 .conc-padding{
     margin-inline: auto;
@@ -1009,6 +1014,174 @@ nav {
 .pd-3{
     display: none;
 }
+.footer{
+    border-top:1px solid #dddddd;
+    background: #f7f7f7;
+}
+.foot-pad{
+    margin-inline: auto;
+    max-width: 2520px;
+    padding-inline: 24px;
+}
+.foot{
+    box-sizing: border-box;
+}
+.foot-top:first-child{
+    border-top: 0;
+}
+.foot-top{
+    border-top: 1px solid #dddddd;
+    padding-block: 24px;
+}
+.foot-top h3{
+    margin: 0;
+    margin-bottom:12px;
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: medium;
+}
+.foot-top ul{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+.foot-top li a{
+    text-decoration: none;
+    color:#222222;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    font-family: regular;
+    margin: 0;
+    padding: 0;
+}
+.foot-botm{
+    padding-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #dddddd;
+}
+.bot-1{
+    margin-bottom: 22px;
+}
+.in-1{
+    display: flex;
+}
+.eng{
+    margin-right: 24px;
+}
+.in button{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: medium;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: inherit;
+    background: transparent;
+    color: rgb(34,34,34);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.glo{
+    margin-right: 8px;
+}
+.glo , .inr p{
+    /* margin-right: 8px; */
+    font-size: 1rem;
+    font-weight: 500;
+}
+.glo  svg{
+    display: block;
+    height: 16px;
+    width: 16px;
+    fill: currentColor;
+}
+.in span{
+    font-weight: 500;
+}
+.inr p{
+    margin-right: 5px;
+}
+.air{
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: regular;
+    color: rgb(34,34,34,);
+    margin-bottom: 2px;
+}
+.policies{
+    margin-top: 2px;
+    line-height: 1.625rem;
+}
+.policies .poli{
+    display: inline-block;
+}
+.policies ol{
+    list-style: none;
+    display: inline;
+}
+.policies ol li{
+    display: inline-block;
+}
+.policies ol a{
+    text-decoration: none;
+    font-family: regular;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    color: rgb(34,34,34);
+    font-weight: 400;
+}
+.poli ol span{
+    display: inline-block;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.125rem;
+    min-width: max-content;
+    width: 10px;
+}
+.in-2{
+    display: none;
+    margin-left: 48px;
+}
+.in-2 ul{
+    display: flex;
+    list-style: none;
+}
+.in-2 ul li{
+    margin-right: 16px;
+}
+.in-2 ul li:last-child{
+    margin-right: unset;
+}
+.in-2 a{
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: fit-content;
+    color: rgb(34,34,34);
+    text-decoration: none;
+    font-family: inherit;
+}
+.in-2 a svg{
+    height: 18px;
+    width: 18px;
+    fill: currentColor;
+    display: block;
+}
+.dot{
+    display: none;
+}
+
+
+
+
+
+
 
 
 
@@ -1038,35 +1211,29 @@ nav {
 
 
 @media screen and (min-width:744px) {
-    .one {
-        display: none;
-    }
-
-    .two {
-        display: block;
-    }
-
-    .icon-walas {
-        border-bottom: none;
-        padding-block-start: 12px;
-        padding-inline-end: 40px;
-        padding-inline-start: 40px;
-    }
-    .ick {
-
-        gap: 42px;
-        margin-inline-start: 0;
-        margin-inline-end: 20px;
-    }
-
-    .icon-1 span {
-        gap: 8px;
-    }
-
-    .icon span {
-        gap: 8px;
-    }
-
+.one {
+    display: none;
+}
+.two {
+    display: block;
+}
+.icon-walas {
+    border-bottom: none;
+    padding-block-start: 12px;
+    padding-inline-end: 40px;
+    padding-inline-start: 40px;
+}
+.ick {
+    gap: 42px;
+    margin-inline-start: 0;
+    margin-inline-end: 20px;
+}
+.icon-1 span {
+    gap: 8px;
+}
+.icon span {
+    gap: 8px;
+}
 .right-arrow {
     display: block;
 }
@@ -1080,6 +1247,29 @@ nav {
  }
 .pd-2{
     display: block;
+}
+.foot-pad{
+    padding-inline: 40px;
+}
+.botm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.in-2{
+    display: block;
+}
+.bot-1{
+    margin-bottom: 16px;
+}
+.in{
+    display: flex;
+    justify-content: center;
+}
+.policies{
+    margin-top: unset;
 }
 }
 
@@ -1115,6 +1305,14 @@ nav {
 .pd-2 ul{
     grid-template-columns: repeat(3,1fr);
 } 
+.foots{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.foot-top{
+    border-top: none;
+    padding-block: 48px;
+}
 }
 
 
@@ -1138,7 +1336,38 @@ nav {
 }
 .pd-2{
     display: none;
-}  
+}
+.bot-2{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 4px;
+    margin: -4px;
+    /* justify-content: space-between; */
+    /* flex: 1; */
+}
+.botm{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.in-1{
+    float: right;
+}
+.bot-1{
+    margin: unset;
+}
+.dot{
+    display: flex;
+    min-width: max-content;
+    width: 19px;
+    justify-content: center;
+}
+.in-2{
+    margin-left: 24px;
+}
 }
 
 
@@ -1186,6 +1415,14 @@ nav {
 .exp{
     margin-left: -1px;
 }
+.foot-pad{
+    padding-inline: 80px;
+    /* padding-block: 30px; */
+}
+.foot-top{
+    padding-block: 48px;
+}
+
 }
 
 @media screen and (min-width:1640px) {
